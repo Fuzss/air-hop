@@ -3,7 +3,7 @@ package fuzs.airhop.neoforge;
 import fuzs.airhop.AirHop;
 import fuzs.airhop.data.ModEnchantmentTagProvider;
 import fuzs.airhop.init.ModRegistry;
-import fuzs.puzzleslib.api.core.v1.ModConstructor;
+import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;
 import net.neoforged.fml.common.Mod;
 

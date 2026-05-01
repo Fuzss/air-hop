@@ -1,9 +1,10 @@
 {
+    "minecraft": "26.1.2",
     "mod": {
         "id": "airhop",
         "group": "fuzs.airhop",
         "name": "Air Hop",
-        "version": "21.11.0",
+        "version": "26.1.0",
         "authors": [
             "Fuzs"
         ],
@@ -36,13 +37,13 @@
     ],
     "links": [
         {
-            "name": "github",
-            "slug": "airhop"
-        },
-        {
             "name": "curseforge",
             "slug": "air-hop",
             "id": "323071"
+        },
+        {
+            "name": "github",
+            "slug": "air-hop"
         },
         {
             "name": "modrinth",

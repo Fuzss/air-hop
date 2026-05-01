@@ -5,7 +5,7 @@ import fuzs.airhop.config.ServerConfig;
 import fuzs.airhop.handler.PlayerFallHandler;
 import fuzs.airhop.init.ModRegistry;
 import fuzs.airhop.network.client.ServerboundAirHopMessage;
-import fuzs.puzzleslib.api.network.v4.MessageSender;
+import fuzs.puzzleslib.common.api.network.v4.MessageSender;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.world.entity.LivingEntity;
