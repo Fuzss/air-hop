@@ -1,6 +1,6 @@
-package fuzs.airhop.client;
+package fuzs.airhop.common.client;
 
-import fuzs.airhop.client.handler.AirHopClientHandler;
+import fuzs.airhop.common.client.handler.AirHopClientHandler;
 import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
 import fuzs.puzzleslib.common.api.event.v1.entity.player.PlayerTickEvents;
 

@@ -1,8 +1,8 @@
-package fuzs.airhop.handler;
+package fuzs.airhop.common.handler;
 
-import fuzs.airhop.AirHop;
-import fuzs.airhop.config.ServerConfig;
-import fuzs.airhop.init.ModRegistry;
+import fuzs.airhop.common.AirHop;
+import fuzs.airhop.common.config.ServerConfig;
+import fuzs.airhop.common.init.ModRegistry;
 import fuzs.puzzleslib.common.api.event.v1.core.EventResult;
 import fuzs.puzzleslib.common.api.event.v1.data.MutableDouble;
 import fuzs.puzzleslib.common.api.event.v1.data.MutableFloat;

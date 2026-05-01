@@ -1,6 +1,6 @@
-package fuzs.airhop.data.client;
+package fuzs.airhop.common.data.client;
 
-import fuzs.airhop.init.ModRegistry;
+import fuzs.airhop.common.init.ModRegistry;
 import fuzs.puzzleslib.common.api.client.data.v2.AbstractLanguageProvider;
 import fuzs.puzzleslib.common.api.data.v2.core.DataProviderContext;
 

@@ -1,9 +1,9 @@
-package fuzs.airhop.network.client;
+package fuzs.airhop.common.network.client;
 
 import com.google.common.base.Predicates;
-import fuzs.airhop.AirHop;
-import fuzs.airhop.config.ServerConfig;
-import fuzs.airhop.init.ModRegistry;
+import fuzs.airhop.common.AirHop;
+import fuzs.airhop.common.config.ServerConfig;
+import fuzs.airhop.common.init.ModRegistry;
 import fuzs.puzzleslib.common.api.item.v2.ItemHelper;
 import fuzs.puzzleslib.common.api.network.v4.message.MessageListener;
 import fuzs.puzzleslib.common.api.network.v4.message.play.ServerboundPlayMessage;

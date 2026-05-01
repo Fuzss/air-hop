@@ -1,6 +1,6 @@
-package fuzs.airhop.data;
+package fuzs.airhop.common.data;
 
-import fuzs.airhop.init.ModRegistry;
+import fuzs.airhop.common.init.ModRegistry;
 import fuzs.puzzleslib.common.api.data.v2.core.DataProviderContext;
 import fuzs.puzzleslib.common.api.data.v2.tags.AbstractTagProvider;
 import net.minecraft.core.HolderLookup;

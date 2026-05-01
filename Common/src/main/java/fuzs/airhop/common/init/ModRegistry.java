@@ -1,7 +1,7 @@
-package fuzs.airhop.init;
+package fuzs.airhop.common.init;
 
 import com.mojang.serialization.Codec;
-import fuzs.airhop.AirHop;
+import fuzs.airhop.common.AirHop;
 import fuzs.puzzleslib.common.api.attachment.v4.DataAttachmentRegistry;
 import fuzs.puzzleslib.common.api.attachment.v4.DataAttachmentType;
 import fuzs.puzzleslib.common.api.data.v2.AbstractDatapackRegistriesProvider;

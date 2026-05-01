@@ -1,7 +1,7 @@
 package fuzs.airhop.neoforge.data.client;
 
-import fuzs.airhop.AirHop;
-import fuzs.airhop.init.ModRegistry;
+import fuzs.airhop.common.AirHop;
+import fuzs.airhop.common.init.ModRegistry;
 import fuzs.puzzleslib.common.api.data.v2.core.DataProviderContext;
 import fuzs.puzzleslib.neoforge.api.client.data.v2.AbstractSoundProvider;
 

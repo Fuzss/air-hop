@@ -1,10 +1,10 @@
-package fuzs.airhop.client.handler;
+package fuzs.airhop.common.client.handler;
 
-import fuzs.airhop.AirHop;
-import fuzs.airhop.config.ServerConfig;
-import fuzs.airhop.handler.PlayerFallHandler;
-import fuzs.airhop.init.ModRegistry;
-import fuzs.airhop.network.client.ServerboundAirHopMessage;
+import fuzs.airhop.common.AirHop;
+import fuzs.airhop.common.config.ServerConfig;
+import fuzs.airhop.common.handler.PlayerFallHandler;
+import fuzs.airhop.common.init.ModRegistry;
+import fuzs.airhop.common.network.client.ServerboundAirHopMessage;
 import fuzs.puzzleslib.common.api.network.v4.MessageSender;
 import net.minecraft.core.Holder;
 import net.minecraft.core.component.DataComponentType;

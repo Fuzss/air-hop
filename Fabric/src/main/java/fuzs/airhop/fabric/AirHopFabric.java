@@ -1,6 +1,6 @@
 package fuzs.airhop.fabric;
 
-import fuzs.airhop.AirHop;
+import fuzs.airhop.common.AirHop;
 import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import net.fabricmc.api.ModInitializer;
 

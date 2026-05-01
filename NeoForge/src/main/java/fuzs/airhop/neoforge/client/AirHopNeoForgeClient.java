@@ -1,8 +1,8 @@
 package fuzs.airhop.neoforge.client;
 
-import fuzs.airhop.AirHop;
-import fuzs.airhop.client.AirHopClient;
-import fuzs.airhop.data.client.ModLanguageProvider;
+import fuzs.airhop.common.AirHop;
+import fuzs.airhop.common.client.AirHopClient;
+import fuzs.airhop.common.data.client.ModLanguageProvider;
 import fuzs.airhop.neoforge.data.client.ModSoundDefinitionProvider;
 import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
 import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;

@@ -1,16 +1,15 @@
-package fuzs.airhop;
+package fuzs.airhop.common;
 
-import fuzs.airhop.config.ServerConfig;
-import fuzs.airhop.handler.PlayerFallHandler;
-import fuzs.airhop.init.ModRegistry;
-import fuzs.airhop.network.client.ServerboundAirHopMessage;
+import fuzs.airhop.common.config.ServerConfig;
+import fuzs.airhop.common.handler.PlayerFallHandler;
+import fuzs.airhop.common.init.ModRegistry;
+import fuzs.airhop.common.network.client.ServerboundAirHopMessage;
 import fuzs.puzzleslib.common.api.config.v3.ConfigHolder;
 import fuzs.puzzleslib.common.api.core.v1.ModConstructor;
 import fuzs.puzzleslib.common.api.core.v1.context.PayloadTypesContext;
 import net.minecraft.resources.Identifier;
 import fuzs.puzzleslib.common.api.event.v1.entity.living.LivingFallCallback;
 import fuzs.puzzleslib.common.api.event.v1.entity.player.PlayerTickEvents;
-import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

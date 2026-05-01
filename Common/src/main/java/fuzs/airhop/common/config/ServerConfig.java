@@ -1,4 +1,4 @@
-package fuzs.airhop.config;
+package fuzs.airhop.common.config;
 
 import fuzs.puzzleslib.common.api.config.v3.Config;
 import fuzs.puzzleslib.common.api.config.v3.ConfigCore;

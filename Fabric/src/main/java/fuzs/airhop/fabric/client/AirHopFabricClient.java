@@ -1,7 +1,7 @@
 package fuzs.airhop.fabric.client;
 
-import fuzs.airhop.AirHop;
-import fuzs.airhop.client.AirHopClient;
+import fuzs.airhop.common.AirHop;
+import fuzs.airhop.common.client.AirHopClient;
 import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
 import net.fabricmc.api.ClientModInitializer;
 
