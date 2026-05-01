@@ -1,4 +1,4 @@
-accessWidener   v2  named
+classTweaker    v2  official
 accessible  field   net/minecraft/world/entity/LivingEntity noJumpDelay I
 transitive-accessible   method  net/minecraft/world/item/enchantment/EnchantmentHelper  getComponentType    (Lnet/minecraft/world/item/ItemStack;)Lnet/minecraft/core/component/DataComponentType;
 transitive-accessible   method  net/minecraft/world/item/enchantment/EnchantmentHelper  runIterationOnItem  (Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/enchantment/EnchantmentHelper$EnchantmentVisitor;)V
