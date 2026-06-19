@@ -19,7 +19,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.util.Unit;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.EntityTypes;
 import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
@@ -37,7 +37,7 @@ public class ModRegistry {
             () -> DataComponentType.<Unit>builder().persistent(Unit.CODEC).build());
 
     public static final DataAttachmentType<Entity, Byte> AIR_HOPS_ATTACHMENT_TYPE = DataAttachmentRegistry.<Byte>entityBuilder()
-            .defaultValue(EntityType.PLAYER, (byte) 0)
+            .defaultValue(EntityTypes.PLAYER, (byte) 0)
             .persistent(Codec.BYTE)
             .networkSynchronized(ByteBufCodecs.BYTE, PlayerSet::ofEntity)
             .build(AirHop.id("air_hops"));
