@@ -6,11 +6,17 @@
     "26.1.x": "maintained",
     "26.2.x": "primary"
   },
-  "properties": {
-    "distributions.curseforge.id": "323071",
-    "distributions.curseforge.slug": "air-hop",
-    "distributions.github.slug": "air-hop",
-    "distributions.modrinth.id": "g1eaCZgs",
-    "distributions.modrinth.slug": "air-hop"
+  "distributions": {
+    "curseforge": {
+      "id": "323071",
+      "slug": "air-hop"
+    },
+    "github": {
+      "slug": "air-hop"
+    },
+    "modrinth": {
+      "id": "g1eaCZgs",
+      "slug": "air-hop"
+    }
   }
 }
