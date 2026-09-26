@@ -5,7 +5,7 @@ import fuzs.airhop.common.client.AirHopClient;
 import fuzs.airhop.common.data.client.ModLanguageProvider;
 import fuzs.airhop.neoforge.data.client.ModSoundDefinitionProvider;
 import fuzs.puzzleslib.common.api.client.core.v1.ClientModConstructor;
-import fuzs.puzzleslib.neoforge.api.data.v2.core.DataProviderHelper;
+import fuzs.puzzleslib.neoforge.api.data.v3.core.DataProviderBuilder;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.fml.common.Mod;
 
@@ -14,7 +14,7 @@ public class AirHopNeoForgeClient {
 
     public AirHopNeoForgeClient() {
         ClientModConstructor.construct(AirHop.MOD_ID, AirHopClient::new);
-        DataProviderHelper.registerDataProviders(AirHop.MOD_ID, ModLanguageProvider::new,
+        DataProviderBuilder.of(AirHop.MOD_ID).addProvider(ModLanguageProvider::new,
                 ModSoundDefinitionProvider::new
         );
     }

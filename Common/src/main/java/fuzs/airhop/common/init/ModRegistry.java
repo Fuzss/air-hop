@@ -4,12 +4,11 @@ import com.mojang.serialization.Codec;
 import fuzs.airhop.common.AirHop;
 import fuzs.puzzleslib.common.api.attachment.v4.DataAttachmentRegistry;
 import fuzs.puzzleslib.common.api.attachment.v4.DataAttachmentType;
-import fuzs.puzzleslib.common.api.data.v2.AbstractDatapackRegistriesProvider;
+import fuzs.puzzleslib.common.api.init.v3.registry.ContentRegistrationHelper;
 import fuzs.puzzleslib.common.api.init.v3.registry.RegistryManager;
 import fuzs.puzzleslib.common.api.network.v4.PlayerSet;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
-import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
@@ -25,8 +24,6 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 
 public class ModRegistry {
-    public static final RegistrySetBuilder REGISTRY_SET_BUILDER = new RegistrySetBuilder().add(Registries.ENCHANTMENT,
-            ModRegistry::bootstrapEnchantments);
     static final RegistryManager REGISTRIES = RegistryManager.from(AirHop.MOD_ID);
     public static final ResourceKey<Enchantment> AIR_HOP_ENCHANTMENT = REGISTRIES.registerEnchantment("air_hop");
     public static final Holder.Reference<SoundEvent> ENTITY_PLAYER_HOP_SOUND_EVENT = REGISTRIES.registerSoundEvent(
@@ -37,7 +34,7 @@ public class ModRegistry {
             () -> DataComponentType.<Unit>builder().persistent(Unit.CODEC).build());
 
     public static final DataAttachmentType<Entity, Byte> AIR_HOPS_ATTACHMENT_TYPE = DataAttachmentRegistry.<Byte>entityBuilder()
-            .defaultValue(EntityTypes.PLAYER, (byte) 0)
+            .defaultValue(EntityTypes.PLAYER.builtInRegistryHolder().key(), (byte) 0)
             .persistent(Codec.BYTE)
             .networkSynchronized(ByteBufCodecs.BYTE, PlayerSet::ofEntity)
             .build(AirHop.id("air_hops"));
@@ -48,7 +45,7 @@ public class ModRegistry {
 
     public static void bootstrapEnchantments(BootstrapContext<Enchantment> context) {
         HolderGetter<Item> items = context.lookup(Registries.ITEM);
-        AbstractDatapackRegistriesProvider.registerEnchantment(context,
+        ContentRegistrationHelper.registerEnchantment(context,
                 AIR_HOP_ENCHANTMENT,
                 Enchantment.enchantment(Enchantment.definition(items.getOrThrow(ItemTags.LEG_ARMOR_ENCHANTABLE),
                         2,
